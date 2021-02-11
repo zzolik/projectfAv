@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+$roboto: 'Roboto', sans-serif;
+.green {
+	color: #00C368 !important;
+}
+.rotatevector {
+	transform: rotate(180deg);
+}
+h2 {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;   
+	-moz-user-select: none;    
+	-ms-user-select: none;     
+	user-select: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 17%;
+}
+.servicesfPhone {
+	display: none;
+}
+.element1 {
+	top: 100px;
+	clear: both;
+	font-family: $roboto;
+	color: #2E3A59;
+	&__bg {
+		position: absolute;
+		&:nth-child(1) {
+			background: transparent;
+			bottom: 0;
+		}
+		&:nth-child(2) {
+			right: 0;
+			top: 13%;
+		}
+	}
+	&-size500 {
+		width:50%;
+		margin: 0 auto;
+	}
+	&__line {
+		background: #00C368;
+		width: 184px;
+		height: 4px;
+		margin: auto;
+
+	}
+	&__title {
+		text-align: center;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 47px;
+		text-transform: uppercase;
+	}
+	.services {
+		.block1, .block3 {
+			position: relative;
+			width: 500px;
+			margin: 0 auto;
+		}
+		.block2 {
+			position: relative;
+			margin: 0 auto;
+			.is_right {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+		.block3 {
+			margin-top: -10%;
+		}
+		&__elem {
+			width: 180px; 
+			height: 150px;
+			&:nth-child(2) {
+				position: absolute; 
+				right: 0;
+				top: 0;
+			}
+			&-feedback {
+   				text-align: center;
+			}
+			p {
+				font-weight: 400;
+				text-align: center;
+			}
+		}
+	}
+}
+.element2 {
+	font-family: $roboto;
+	&__line {
+		background: #00C368;
+		width: 184px;
+		height: 4px;
+		margin: 100px auto 18px auto;
+	}
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 47px;
+		color: #2E3A59;
+		margin-bottom: 50px;
+	}
+	.sidebarL {
+		height: 100%;
+		float: left;
+		width: 50%;
+		background: #F5F5F5;
+		.review {
+			display: flex;
+			justify-content: space-around;
+			&__img {
+				
+			}
+			&__text {
+				width: 100%;
+				color: #2E3A59;
+				width: 500px;
+				position: relative;
+				img:nth-child(1) {
+					margin: 10px 10px -5px -50px;
+				}
+				.last-img {
+					position: absolute;
+					right: 0;
+					transform: rotate(180deg);
+				}
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		.secondReview {
+			margin: 130px 10% 0 10%;
+			display: flex;
+			justify-content: space-around;
+			span {
+				font-weight: bold;
+			}
+			div {
+				display: flex;
+				&:nth-child(1) {
+					margin-right: 30px;
+				}
+				&:nth-child(2) {
+					p {
+						margin-left: 20px;
+					}
+				}
+			} 
+			img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+	.sidebarR {
+		height: 100%;
+		float: right;
+		width: 50%;
+		background: #F8FBFF;
+		p {
+			color: #2E3A59;
+		}
+		.litle-text {
+			text-align: center;
+			margin-top: -30px;
+			margin-bottom: 25px;
+		}
+		.grayline {
+			width: 100%;
+			height: 1px;
+			background: #E7EBF0;
+			margin: 16px 0;
+		}
+		.dropdown {
+			margin-left: 90px;
+			.flex {
+				display: flex;
+				align-items: center;
+				img {
+					margin-right: 25px;
+				}
+			}
+			list-style: none;
+			ul {
+				list-style: none;
+			}
+			&__list {
+				position: relative;
+				width: 100%;
+				h2 {
+					display: flex;
+					width: 100%;
+					align-items: center;
+					cursor: pointer;
+					color: #2E3A59;
+				}
+				.vector {
+					cursor: pointer;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			&__list--text {
+	   			display: none;
+	   			margin-top: 10px;
+	   			margin-right: 5%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1350px) { // если экран меньше 1350 то происходит следующее
+	.element1__bg {
+		display: none;
+	}
+}
+@media screen and (max-width: 1170px) { // если экран меньше 1170px то происходит следующее
+	.menu__nav__item, .menu__nav__button, .element1__line, .element1__title, .services, .sidebarL {
+		display: none;
+	}
+	.servicesfPhone {
+		margin-left:15px;
+		margin-right: 15px;
+	}
+	.element2__title {
+		font-size: 35px;
+	}
+	.sidebarR, .sidebarL {
+		float: none !important;
+		width: 100% !important;
+	}
+	.logofPhone {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		img {
+			margin-top: 27px;
+		}
+	}
+	.dropdown__list h2 {
+		position: relative;
+	}
+	.vector {
+		right: -5% !important; 
+	}
+
+// Первая часть для телефонов
+	.servicesfPhone {
+		font-family: $roboto;
+		background: #fff;
+		display: block;
+		&__fruit {
+			display: flex;
+			justify-content: center;
+		}
+		h2 {
+			text-align: center;
+			color: #2E3A59;
+			text-transform: uppercase;
+			margin-top: -50px;
+			margin-bottom: 50px;
+		}
+		.isSlick {
+			list-style: none;
+			height: 300;
+			&__item {
+				p {
+					text-align: center;
+					width: 176;
+					margin: 0 auto;
+				}
+				&>div {
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+	section {
+		position: relative;
+	}
+	.sidebarR {
+		position: absolute;
+		top: 0;
+		.flex {
+			img:nth-child(1) {
+				display: none;
+			}
+			img:nth-child(2) {
+				margin-top: 10px;
+			}
+		}
+		.dropdown {
+			margin: 0 10px !important;
+			&__list h2 {
+				font-size: 26px;
+			}
+		}
+	}
+	.sidebarLfphone {
+		&__title {
+			text-align: center;
+			margin-bottom: 50px;
+			color:  #2E3A59;
+		}
+		.reviewfphone {
+			box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+			border-radius: 32px;
+			margin: 0 16px;
+			&__pictures {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img:nth-child(2) {
+					margin:-40px 40px 0 40px;
+					width: 97px;
+					height: 97px;
+					z-index: 1000;
+				}
+				img:nth-child(3) {
+					transform: rotate(180deg);
+				}
+			}
+			&__text {
+				p {
+					margin: 30px 16px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 150%;
+					color: #2E3A59;
+					text-align: center;
+					padding-bottom: 15px;
+					span {
+						font-weight: bold;
+					}
+				}
+			}
+			&__item {
+				margin: 0 32px;
+				display: flex;
+				div:nth-child(1) {
+					margin-right: 15px;
+				}
+				img {
+					width: 60px;
+					height: 60px;
+				}
+				p {
+					color: #2E3A59;
+				}
+				span {
+					font-weight: bold;
+				}
+			}
+			&__item:nth-child(2) {
+				margin-top: 26px;
+				padding-bottom: 36px;
+			}
+		}
+	}
+}
+// ********
+@media screen and (min-width: 1170px) { // если экран больше 1170px то происходит следующее
+	.sidebarLfphone {
+		display: none;
+	}
+	.element1 {
+		height: 90%;
+		background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
+	}
+		.menu__nav__logo {
+			margin-top: 2%;
+		}
+		.menu {	
+	&__nav {
+		margin-left: 80px;
+		list-style: none;
+		&__item, &__logo {
+			float: left;
+		}
+		&__item, &__button {
+			font-family: $roboto;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			cursor: pointer;
+			margin-top: 4%;
+		}
+		&__item {
+			color: #A6ABBD;
+			margin-left: 90px;
+			padding: 4px 25px;
+			border-radius: 10px;
+			&:hover {
+				background: #00C368;
+				color: #fff;
+				transition: 0.3s;
+				box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
+			}
+		}
+		&__item:nth-child(5) {
+			float: right; 
+		}
+		&__button {
+			color: #fff;
+			border-radius: 10px;
+			background: #00C368;
+			width: 117px;
+			height: 38px;
+			border: none;
+			float: right;
+			margin-right: 90px;
+		}
+	}
+}
+}
+
+// Работа со слайдером
+.slick-slide:active, .slick-slide:focus {
+	outline: none;
+}
+.slick-slider {
+	position: relative;
+	border: none;
+	outline: none;
+}
+//кнопки
+.slick-arrow {
+	position: absolute;
+	z-index: 1000;
+	font-size: 0;
+	width: 19px;
+	height: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+//правая кнопка
+.slick-next {
+	bottom: 20px;
+	right: 10%;
+	background: url('assets/img/Vector (2).png') 0 0 no-repeat;
+}
+//левая кнопка
+.slick-prev {
+	bottom: 20px;
+	left: 10%;	
+	background: url('assets/img/Vector (1).png') 0 0 no-repeat;
+}
+// dots
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li {
+		list-style: none;
+		margin: 0 10px;
+	}
+	button {
+		bottom: 24px;
+		position: absolute;
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #E7EBF0;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+	.slick-active button {
+		background: #A6ABBD;;
+	}
+}
+//
+//************
